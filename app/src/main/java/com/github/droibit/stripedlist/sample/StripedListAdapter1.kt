@@ -5,10 +5,10 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.github.droibit.stripedlist.sample.TextListAdapter1.ViewHolder
-import kotlinx.android.synthetic.main.list_item_text_1.view.text
+import com.github.droibit.stripedlist.sample.StripedListAdapter1.ViewHolder
+import kotlinx.android.synthetic.main.list_item_striped_1.view.text
 
-class TextListAdapter1(
+class StripedListAdapter1(
   context: Context,
   private val texts: List<String>,
   private val itemClickListener: OnItemClickListener
@@ -20,7 +20,7 @@ class TextListAdapter1(
     parent: ViewGroup,
     viewType: Int
   ) = ViewHolder(
-      itemView = inflater.inflate(R.layout.list_item_text_1, parent, false)
+      itemView = inflater.inflate(R.layout.list_item_striped_1, parent, false)
   ).apply {
     itemView.setOnClickListener {
       itemClickListener.invoke(texts[adapterPosition])

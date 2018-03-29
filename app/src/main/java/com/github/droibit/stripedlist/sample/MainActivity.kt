@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     setContentView(R.layout.activity_main)
 
     list.also {
-      it.adapter = TextListAdapter1(this, texts) {
+      it.adapter = StripedListAdapter1(this, texts) {
         Log.d(TAG, "#onItemClicked(text=$it)")
       }
       it.addItemDecoration(
