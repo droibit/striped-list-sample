@@ -6,7 +6,6 @@
     android:minHeight="?android:listPreferredItemHeight"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:background="?android:attr/selectableItemBackground"
     >
 
   <TextView

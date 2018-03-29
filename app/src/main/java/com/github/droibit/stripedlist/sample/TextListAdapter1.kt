@@ -38,8 +38,14 @@ class TextListAdapter1(
 
   class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    fun bind(position: Int, text: String) {
+    fun bind(
+      position: Int,
+      text: String
+    ) {
       itemView.text.text = text
+      itemView.setBackgroundResource(
+          if ((position % 2) == 0) R.drawable.background_list_item_light else R.drawable.background_list_item_dark
+      )
     }
   }
 }
